@@ -1,13 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  padding: 40px;
+  padding-inline: 100px;
 }
 header nav {
   display: flex;
   gap: 20px;
+  font-size: 21px;
 }
 header nav a {
   text-decoration: none;
@@ -15,13 +24,97 @@ header nav a {
 }
 header button {
   color: white;
-  padding: 10px 20px;
+  padding: 15px 25px;
   background-color: green;
   border-radius: 10px;
   border: none;
+  font-size: 21px;
 }
 header button:hover {
   background-color: rgb(0, 92, 0);
   transition: 0.2s;
   cursor: pointer;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(225, 255, 209);
+  gap: 50px;
+  padding: 45px;
+}
+.About button {
+  color: white;
+  padding: 15px 25px;
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  font-size: 21px;
+}
+.About button:hover {
+  background-color: rgb(0, 92, 0);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.About h1 {
+  color: green;
+  width: 500px;
+  text-align: center;
+  font-size: 50px;
+}
+.About p {
+  font-size: 21px;
+}
+
+.Menu {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.Menu h1 {
+  color: green;
+}
+.Menu .Menu_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 25px;
+}
+.Menu .Menu_cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 350px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  --webkit-box-shadow: 2px 1px 16px 4px black;
+  box-shadow: 2px 1px 16px 4px black;
+  transition: 0.2s;
+}
+.Menu .Menu_cards .card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Menu .Menu_cards .card:hover {
+  transform: translateY(-5px);
+}
+.Menu .Menu_cards .card h3 {
+  font-size: 25px;
+}
+.Menu .Menu_cards .card p {
+  color: green;
+  font-size: 18px;
+}
+.Menu .Menu_cards .card span {
+  color: green;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */
